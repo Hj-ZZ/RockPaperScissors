@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1 id = "title">Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <div class="game">
+            <div id="computer">
+                <h3  style = "text-align: center;">Computer</h3>
+                <img style ="width: 150px;"src="—Pngtree—simple white computer keyboard element_4077905.png" alt="Computer" >
+            </div>
+            <div id="score">
+                <h2 id = "round-nbr">Round 0</h2>
+                <h1 style = "text-align: center; margin-top: 2rem;"id = "round-score">0 - 0</h1>
+            </div>
+            <div id="player">
+                <h3 id = "name" style = "text-align: center;">Player Name</h3>
+                <img style ="width: 150px;" src="—Pngtree—hacker wearing hoodie and using_5415642.png" alt="Player" srcset="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn" onclick="playRound('Rock')"><img src = "rock.png" style="width: 17px;">Rock</button>
+            <button type="button" class="btn" onclick= "playRound('Paper')"><img src = "paper.png" style="width: 17px; position: relative; top: 0.1rem;">Paper</button>
+            <button type="button" class="btn" onclick= "playRound('Scissors')"><img src = "scissors.png" style="width: 17px; position: relative; top: 0.15rem;">Scissors</button>
+        </div>
+        <div> 
+            <h4 id = "updates"></h4>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
